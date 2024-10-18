@@ -1,0 +1,61 @@
+/* src/styles/SurveyForm.css */
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.survey-form input,
+.survey-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.survey-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.survey-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.survey-form button:active {
+  background-color: #004494;
+  transform: scale(0.95);
+}
+
+.light-mode .survey-form {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .survey-form {
+  background-color: #444;
+  color: white;
+}
+
+.light-mode .survey-form input,
+.light-mode .survey-form textarea {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .survey-form input,
+.dark-mode .survey-form textarea {
+  background-color: #555;
+  color: white;
+}

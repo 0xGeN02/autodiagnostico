@@ -1,0 +1,48 @@
+/* src/styles/Landing.css */
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.landing-content {
+  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.start-button:active {
+  background-color: #004494;
+  transform: scale(0.95);
+}
+
+.light-mode .landing-content {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode .landing-content {
+  background-color: #444;
+  color: white;
+}
